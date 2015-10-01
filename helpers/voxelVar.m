@@ -6,6 +6,6 @@ function [ variance ] = voxelVar( I, x, y, z )
     A = I(x-1:x+1, y-1:y+1, z-1:z+1);
     A = double(A);
     
-    variance = var(var(var(A)));
+    variance = var(A(:));
 end
 
