@@ -6,6 +6,6 @@ function [ avg ] = voxelAvg( I, x, y, z )
     % can throw "Index exceeds matrix dimensions"
     A = I(x-1:x+1, y-1:y+1, z-1:z+1);
     
-    avg = mean(mean(mean(A)));
+    avg = mean(A(:));
 end
 
