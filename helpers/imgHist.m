@@ -3,7 +3,7 @@ function [ ] = imgHist( I )
     %IMGHIST(I) show the histogram of the image I.
 
     [m,n] = size(I);
-    maxVal = max(max(I));
+    maxVal = max(I(:));
 
     histoArr = zeros(maxVal);
 
